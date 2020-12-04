@@ -35,6 +35,17 @@ public class UserQueue {
 
 Although experienced Software Engineers will have widely varying answers, they will be closer together (in general) in the semantic embedding space, versus a new computer science graduate.
 
+# Issues
+
+These questions do not cover other engineering skills, such as
+
+* Are you solving the right problem?
+* Do you measure twice and cut once?
+* Do you know how to unblock yourself?
+* Do you understand the requirements and what questions to ask to gather additional ones?
+
+And various other communication and standard engineering skills. The goal of this questionnaire is for extracting technical competency signal. There are of course many other issues that should be solved for with other types of interview techniques.
+
 # Future work
 
 While this questionnaire should supply some signal, it would be interesting to experiment with stacking multiple embedding inputs into a single logit classifier. Including:
@@ -51,4 +62,4 @@ The frontend has been quickly prototyped with `TypeScript` using `create-typescr
 
 The backend is a django web app (for learning purposes) with [PyTorch](https://github.com/pytorch/pytorch) and [HuggingFace](https://github.com/huggingface) for NLP.
 
-Both frontend and backend are bare bones, as this is a prototype.
+Both frontend and backend are bare-bones, as this is a prototype.
