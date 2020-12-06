@@ -1,0 +1,7 @@
+@import '~antd/dist/antd.css';
+
+/* Necessary so links have a visual indication they're selected when tabbed on. */
+a:focus {
+	border: 1px solid;
+	border-radius: 4px;
+}
