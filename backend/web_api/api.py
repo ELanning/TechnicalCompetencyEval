@@ -1,4 +1,5 @@
 import json
+import uuid
 from django.http import HttpRequest, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from http import HTTPStatus
@@ -50,6 +51,12 @@ def submit_form(request: HttpRequest):
                 {"message": "all technicalQuestionAnswers must be strings."},
                 status=HTTPStatus.BAD_REQUEST,
             )
+
+    # TODO: Possible sanitization of answers might be required.
+    # Eg to truncate length, strip HTML in case answers are used elsewhere, etc.
+    # Expects the cwd to be the project root. Could be made more robust if need be.
+    with open(f"./dataset/{uuid.uuid4()}.json", "w+") as fp:
+        json.dump(form_response, fp)
 
     return JsonResponse(
         {"message": "Form successfully submitted."}, status=HTTPStatus.OK

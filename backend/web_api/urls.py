@@ -20,6 +20,6 @@ from .api import submit_form
 # Non-views should follow RESTful service URL conventions.
 # See: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.htmldr
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/v1/technical-form', submit_form)
+    path("admin/", admin.site.urls),
+    path("api/v1/technical-form", submit_form),
 ]
