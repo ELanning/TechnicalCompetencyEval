@@ -16,7 +16,7 @@ Sample open ended questions may be,
 
 - When do you prefer fail-fast over robust error handling?
 - Should assertions be left in production code? Why or why not?
-- What's the difference between absraction versus anticipating abstraction?
+- What's the difference between abstraction versus anticipating abstraction?
 - When is it appropriate to use a 3rd party library versus writing it yourself?
 - What are your favorite books on Software Development, if any? Why?
 - What are your thoughts on inheritance for code reuse?
