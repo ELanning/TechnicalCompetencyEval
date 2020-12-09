@@ -52,3 +52,6 @@ docs/_build/
 
 # PyCharm
 .idea/
+
+# PyTorch/HuggingFace caches
+nlp_model/cache

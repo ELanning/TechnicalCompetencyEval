@@ -1,0 +1,2 @@
+from nlp_model.classify_technical_competency import classify_technical_competency
+from nlp_model.labels import technical_competency_labels
