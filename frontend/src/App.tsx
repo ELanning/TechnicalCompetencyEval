@@ -175,7 +175,7 @@ function validateWordBounds(_: any, input: string) {
 		return Promise.reject('Answer is required.');
 	}
 
-	const wordCount = input?.split(' ').length;
+	const wordCount = input.split(' ').length;
 	const wordCountMax = 500;
 	return wordCount > wordCountMax
 		? Promise.reject(`Word count must not exceed ${wordCountMax}.`)
