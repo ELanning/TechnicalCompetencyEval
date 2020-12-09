@@ -52,6 +52,7 @@ def submit_form(request: HttpRequest):
                 status=HTTPStatus.BAD_REQUEST,
             )
 
+    # TODO: Long term, this should be likely be published as a message to a queue system, such as RabbitMQ.
     # TODO: Possible sanitization of answers might be required.
     # Eg to truncate length, strip HTML in case answers are used elsewhere, etc.
     # Expects the cwd to be the project root. Could be made more robust if need be.
